@@ -1,0 +1,17 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: rgb(161, 161, 161);
+  min-height: 100vh;
+  margin: 0px;
+}
+
+.suggestion .MuiTypography-body2 {
+  font-family: Poppins;
+  text-align: start;
+}
+
+.suggestion .MuiTypography-body1 {
+  font-family: Poppins;
+  text-align: start;
+}
