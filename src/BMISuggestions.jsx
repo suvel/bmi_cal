@@ -150,7 +150,7 @@ const BMISuggestions = ({ bmi, idealWeight, bmr }) => {
       <Typography variant='h6'>BMI Suggestions</Typography>
       {/* {suggestions} */}
       {body2Content}
-      <FormControl>
+      <FormControl sx={{paddingLeft:'40px'}}>
         <FormLabel id='demo-radio-buttons-group-label'>Activity Type</FormLabel>
         <RadioGroup
           aria-labelledby='demo-radio-buttons-group-label'

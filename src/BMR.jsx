@@ -20,14 +20,18 @@ const BMR = ({ calBMI }) => {
         <TextField
           type={'number'}
           value={form.height}
-          onChange={(e) => setForm((v) => ({ ...v, height: e.target.value }))}
+          onChange={(e) =>
+            setForm((prevVal) => ({ ...prevVal, height: e.target.value }))
+          }
           label='Height'
           variant='outlined'
         />
         <TextField
           type={'number'}
           value={form.weight}
-          onChange={(e) => setForm((v) => ({ ...v, weight: e.target.value }))}
+          onChange={(e) =>
+            setForm((prevVal) => ({ ...prevVal, weight: e.target.value }))
+          }
           label='Weight'
           variant='outlined'
         />
@@ -35,7 +39,9 @@ const BMR = ({ calBMI }) => {
           <TextField
             type={'number'}
             value={form.age}
-            onChange={(e) => setForm((v) => ({ ...v, age: e.target.value }))}
+            onChange={(e) =>
+              setForm((prevVal) => ({ ...prevVal, age: e.target.value }))
+            }
             label='Age'
             variant='outlined'
           />
@@ -43,7 +49,9 @@ const BMR = ({ calBMI }) => {
             color='primary'
             value={form.gender}
             exclusive
-            onChange={(_, val) => setForm((v) => ({ ...v, gender: val }))}
+            onChange={(_, val) =>
+              setForm((prevVal) => ({ ...prevVal, gender: val }))
+            }
             aria-label='Gender'
           >
             <ToggleButton value='male'>Male</ToggleButton>
